@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: 248 250 252;
+  --foreground: 17 24 39;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: 9 14 24;
+  --foreground: 244 247 251;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.13), transparent 30rem),
+    linear-gradient(180deg, rgb(var(--background)) 0%, rgb(var(--background)) 100%);
+  color: rgb(var(--foreground));
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.2);
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.26;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+}
+
+.container-px {
+  @apply px-5 sm:px-6 lg:px-8;
+}
+
+.section-y {
+  @apply py-20 sm:py-24;
+}
+
+.card-surface {
+  @apply rounded-[28px] border border-black/5 bg-white/[0.82] shadow-soft backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.06];
+}
+
+.focus-ring {
+  @apply outline-none ring-offset-2 ring-offset-white focus-visible:ring-2 focus-visible:ring-accent-500 dark:ring-offset-[#090e18];
+}
