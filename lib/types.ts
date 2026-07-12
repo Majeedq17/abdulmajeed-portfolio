@@ -21,6 +21,18 @@ export type Project = {
   summary: string;
   technologies: string[];
   details: {
+    caseStudy?: {
+      projectOverview: string;
+      challenge: string;
+      objectives: string[];
+      myRole: string[];
+      solution: string;
+      keyFeatures: string[];
+      businessImpact: string[];
+      challengesAndDecisions: string[];
+      lessonsLearned: string[];
+      futureEnhancements: string[];
+    };
     overview: string;
     businessProblem: string;
     businessGoals: string[];

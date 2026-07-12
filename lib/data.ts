@@ -101,6 +101,58 @@ export const projects: Project[] = [
       "A structured HRMS case study focused on employee records, leave management, approvals, reporting, and clearer HR operations.",
     technologies: ["Java", "Spring Boot", "REST APIs", "SQL", "HTML", "CSS", "JavaScript"],
     details: {
+      caseStudy: {
+        projectOverview:
+          "This case study explores how a web-based HR Management System can support common HR operations, including employee records, leave requests, approval tracking, role access, and basic reporting. The focus is on translating business needs into a clear system structure that would be understandable to both business stakeholders and a technical team.",
+        challenge:
+          "HR teams often manage employee information, leave requests, and approval follow-ups across scattered files, messages, and manual updates. This makes it harder to know which requests are pending, who is responsible for the next action, and whether employee records are accurate and up to date.",
+        objectives: [
+          "Centralize employee and HR information in one structured system.",
+          "Make leave requests, approvals, and status updates easier to track.",
+          "Reduce repeated manual follow-ups between employees, managers, and HR staff.",
+          "Clarify user roles so each stakeholder can access the right information.",
+          "Create a system foundation that can support additional HR workflows later."
+        ],
+        myRole: [
+          "Defined the business problem and translated it into system-focused requirements.",
+          "Identified the main user groups: employees, department managers, HR staff, HR manager, and system administrator.",
+          "Structured the case study around user needs, core workflows, key features, data entities, and future scope.",
+          "Balanced business clarity with technical feasibility by describing the system as a layered web application with a relational database."
+        ],
+        solution:
+          "The proposed solution is a role-based HRMS that gives employees a clear way to submit leave requests, helps managers review and approve requests, and gives HR staff a centralized view of employee records and HR activity. The system is designed around simple workflows, searchable records, and clear status visibility.",
+        keyFeatures: [
+          "Employee profile management for key personal and work details.",
+          "Leave request submission, review, approval, and rejection workflow.",
+          "Role-based access for employees, managers, HR staff, and administrators.",
+          "Searchable HR records to reduce reliance on scattered documents.",
+          "Dashboard views for pending actions and recent HR activity.",
+          "Structured data model covering employees, departments, roles, leave requests, leave types, approval history, and user accounts."
+        ],
+        businessImpact: [
+          "Improves visibility by making request status and ownership easier to understand.",
+          "Reduces manual coordination by moving repeated HR follow-ups into a shared workflow.",
+          "Supports more consistent HR records by keeping employee data in a centralized structure.",
+          "Helps managers and HR staff make faster decisions through clearer access to pending actions and historical activity."
+        ],
+        challengesAndDecisions: [
+          "Kept the leave workflow simple enough for a portfolio case study while still reflecting a realistic approval process.",
+          "Separated user roles early because permissions influence features, data access, and page behavior.",
+          "Used a relational database structure because HR records depend on clear relationships between employees, departments, roles, and requests.",
+          "Avoided inventing fake performance metrics and focused instead on qualitative business value."
+        ],
+        lessonsLearned: [
+          "A strong system proposal starts with the business workflow, not the technology stack.",
+          "Stakeholder roles should be defined early because they shape requirements and permissions.",
+          "A case study is more convincing when it explains why decisions were made, not only what the system includes."
+        ],
+        futureEnhancements: [
+          "Add notifications for submitted, approved, rejected, or returned leave requests.",
+          "Create reporting views for leave balances, HR activity, and approval workload.",
+          "Add document upload support for employee records.",
+          "Integrate authentication with an enterprise identity provider."
+        ]
+      },
       overview:
         "The HR Management System is a portfolio case study designed to show how business requirements can be translated into a practical system. It focuses on HR workflows such as employee information management, leave requests, approvals, role access, and operational reporting.",
       businessProblem:
