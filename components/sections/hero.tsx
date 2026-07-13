@@ -3,6 +3,7 @@ import { ButtonLink } from "@/components/button-link";
 import { MotionDiv } from "@/components/motion";
 import { HeroVisual } from "@/components/sections/hero-visual";
 import { profile } from "@/lib/data";
+import { siteConfig } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -27,7 +28,7 @@ export function Hero() {
               View Projects
               <ArrowRight className="h-4 w-4" />
             </ButtonLink>
-            <ButtonLink href="/resume/download" variant="secondary" download>
+            <ButtonLink href={siteConfig.resume.downloadPath} variant="secondary" download>
               <Download className="h-4 w-4" />
               Download Resume
             </ButtonLink>

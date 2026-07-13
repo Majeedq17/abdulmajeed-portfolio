@@ -3,6 +3,7 @@ import { Download, FileText } from "lucide-react";
 import { ButtonLink } from "@/components/button-link";
 import { PageHeader } from "@/components/page-header";
 import { resumeSections } from "@/lib/data";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Resume",
@@ -16,7 +17,7 @@ export default function ResumePage() {
         <PageHeader
           eyebrow="Resume"
           title="A clear summary for business analysis and systems analysis roles."
-          description="The download button serves a clean placeholder resume PDF. Replace the content when your final resume is ready."
+          description="Download the latest resume PDF for a concise overview of my business analysis and systems analysis background."
         />
         <div className="card-surface p-7 sm:p-10">
           <div className="flex flex-col gap-5 border-b border-gray-200 pb-8 dark:border-white/10 sm:flex-row sm:items-center sm:justify-between">
@@ -31,7 +32,7 @@ export default function ResumePage() {
                 </p>
               </div>
             </div>
-            <ButtonLink href="/resume/download" download>
+            <ButtonLink href={siteConfig.resume.downloadPath} download>
               <Download className="h-4 w-4" />
               Download Resume
             </ButtonLink>

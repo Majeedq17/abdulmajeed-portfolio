@@ -1,4 +1,4 @@
-import { BarChart3, Brain, BriefcaseBusiness, Github, Linkedin, Mail, ServerCog } from "lucide-react";
+import { BarChart3, Brain, BriefcaseBusiness, Linkedin, Mail, MapPin, ServerCog } from "lucide-react";
 import type { Project, SkillGroup, TimelineItem } from "@/lib/types";
 import { siteConfig } from "@/lib/site";
 
@@ -275,7 +275,7 @@ export const resumeSections = [
 
 export const contactLinks = [
   {
-    label: "abdulmajeed@example.com",
+    label: siteConfig.contact.email,
     href: siteConfig.links.email,
     icon: Mail,
     external: false
@@ -287,10 +287,9 @@ export const contactLinks = [
     external: true
   },
   {
-    label: "GitHub",
-    href: siteConfig.links.github,
-    icon: Github,
-    external: true
+    label: siteConfig.contact.location,
+    icon: MapPin,
+    external: false
   },
   {
     label: "Portfolio Projects",

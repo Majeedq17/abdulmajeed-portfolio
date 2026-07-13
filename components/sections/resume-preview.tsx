@@ -1,6 +1,7 @@
 import { Download } from "lucide-react";
 import { ButtonLink } from "@/components/button-link";
 import { SectionHeading } from "@/components/section-heading";
+import { siteConfig } from "@/lib/site";
 
 export function ResumePreview() {
   return (
@@ -10,10 +11,10 @@ export function ResumePreview() {
           <SectionHeading
             eyebrow="Resume"
             title="Download a focused business technology resume."
-            description="A clean resume area for recruiters, with a downloadable PDF route and a dedicated resume page for quick scanning."
+            description="A clean resume area for recruiters, with the latest PDF download and a dedicated resume page for quick scanning."
           />
           <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-            <ButtonLink href="/resume/download" download>
+            <ButtonLink href={siteConfig.resume.downloadPath} download>
               <Download className="h-4 w-4" />
               Download Resume
             </ButtonLink>

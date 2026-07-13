@@ -9,7 +9,7 @@ export function ContactPreview() {
         <SectionHeading
           eyebrow="Contact"
           title="Open to business analyst, systems analyst, and digital transformation roles."
-          description="Use the contact page for email, LinkedIn, GitHub, and a professional contact form."
+          description="Use the contact page for email, LinkedIn, location details, and a professional contact form."
         />
         <ButtonLink href="/contact" className="mt-8">
           <Mail className="h-4 w-4" />

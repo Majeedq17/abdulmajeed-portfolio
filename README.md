@@ -11,4 +11,4 @@ npm run build
 
 ## Editing Content
 
-Most portfolio content lives in `lib/data.ts`. Replace placeholders there as your experience, projects, links, and resume details evolve.
+Most portfolio content lives in `lib/data.ts`. Shared site metadata, contact details, and resume download settings live in `lib/site.ts`.

@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { navItems, siteConfig } from "@/lib/site";
 
 const socialItems = [
   { label: "Email", href: siteConfig.links.email, icon: Mail },
-  { label: "LinkedIn", href: siteConfig.links.linkedin, icon: Linkedin },
-  { label: "GitHub", href: siteConfig.links.github, icon: Github }
+  { label: "LinkedIn", href: siteConfig.links.linkedin, icon: Linkedin }
 ];
 
 export function Footer() {
