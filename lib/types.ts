@@ -12,6 +12,9 @@ export type TimelineItem = {
   organization: string;
   period: string;
   description: string;
+  icon: LucideIcon;
+  highlights: string[];
+  skills: string[];
 };
 
 export type Project = {
@@ -41,7 +44,7 @@ export type Project = {
     features: string[];
     architecture: string;
     database: string;
-    screenshotPlaceholders: string[];
+    screenshotLabels: string[];
     challenges: string[];
     lessonsLearned: string[];
     futureImprovements: string[];

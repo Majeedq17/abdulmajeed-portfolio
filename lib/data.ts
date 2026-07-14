@@ -1,4 +1,14 @@
-import { BarChart3, Brain, BriefcaseBusiness, Linkedin, Mail, MapPin, ServerCog } from "lucide-react";
+import {
+  BarChart3,
+  Brain,
+  BriefcaseBusiness,
+  GraduationCap,
+  Linkedin,
+  Mail,
+  MapPin,
+  ServerCog,
+  Workflow
+} from "lucide-react";
 import type { Project, SkillGroup, TimelineItem } from "@/lib/types";
 import { siteConfig } from "@/lib/site";
 
@@ -63,32 +73,65 @@ export const skillGroups: SkillGroup[] = [
 
 export const experiences: TimelineItem[] = [
   {
-    title: "Bachelor's Degree in Computing with Business",
-    organization: "Information Technology",
-    period: "Recently Graduated",
+    title: "Software Engineer Intern",
+    organization: "Advance Knowledge Gate (AKG)",
+    period: "Jan 2025 - May 2025",
     description:
-      "Completed a multidisciplinary program combining IT foundations, software concepts, business processes, systems thinking, and practical analysis work."
+      "Supported software delivery work with a business-analysis mindset, focusing on requirements clarity, functional understanding, documentation, testing, and collaboration with the team.",
+    icon: BriefcaseBusiness,
+    highlights: [
+      "Participated in requirements discussions to understand user needs, system behavior, and expected outcomes.",
+      "Reviewed functional flows and helped connect business requests with technical implementation details.",
+      "Supported software testing by checking features against expected behavior and documenting issues clearly.",
+      "Worked in an agile team environment where communication, follow-up, and shared understanding were part of daily delivery."
+    ],
+    skills: [
+      "Requirements Discussions",
+      "Systems Analysis",
+      "Documentation",
+      "Software Testing",
+      "Agile Collaboration"
+    ]
   },
   {
-    title: "HR Management System Case Study",
-    organization: "Academic / Portfolio Project",
-    period: "Editable",
+    title: "Bachelor of Science in Computing with Business",
+    organization: "Arab Open University",
+    period: "2021 - 2025",
     description:
-      "Analyzed an HR workflow, identified common administrative pain points, and structured a system solution covering employee records, leave requests, roles, reporting, and data organization."
+      "Completed a multidisciplinary degree that connected business concepts with computing foundations, preparing me to understand both operational needs and technical solution design.",
+    icon: GraduationCap,
+    highlights: [
+      "Studied business analysis, business management, systems thinking, databases, and software engineering fundamentals.",
+      "Built a practical foundation for analyzing business problems and translating them into structured technology requirements.",
+      "Developed problem-solving habits through coursework that combined process understanding, data awareness, and technical design."
+    ],
+    skills: [
+      "Business Analysis",
+      "Systems Thinking",
+      "Databases",
+      "Business Management",
+      "Problem Solving"
+    ]
   },
   {
-    title: "Business Analysis Practice",
-    organization: "Portfolio Development",
-    period: "Editable",
+    title: "HR Management System",
+    organization: "Graduation Project",
+    period: "2025",
     description:
-      "Prepared documentation-style project pages that explain business problems, stakeholders, goals, features, architecture, and lessons learned for recruiter review."
-  },
-  {
-    title: "Future Role",
-    organization: "Add company name",
-    period: "Add dates",
-    description:
-      "Replace this editable entry with internships, training programs, certificates, freelance work, or full-time professional experience."
+      "Developed the HRMS as a business analysis case study, starting from stakeholder needs and HR workflows before shaping requirements, access rules, system design, and database structure.",
+    icon: Workflow,
+    highlights: [
+      "Defined stakeholders, business requirements, and functional requirements for core HR activities.",
+      "Mapped workflows for employee records, leave requests, approvals, and role-based access.",
+      "Documented system design decisions, user roles, process logic, and database entities to support implementation."
+    ],
+    skills: [
+      "Requirements Gathering",
+      "Process Mapping",
+      "Workflow Analysis",
+      "Role-Based Access",
+      "Database Design"
+    ]
   }
 ];
 
@@ -179,7 +222,7 @@ export const projects: Project[] = [
         "The architecture can be implemented as a layered web application with a frontend interface, REST API endpoints, business logic services, and a relational database. This separation keeps user experience, business rules, and data persistence easier to maintain.",
       database:
         "The database can include entities such as Employee, Department, Role, LeaveRequest, LeaveType, ApprovalHistory, and UserAccount. Relationships should support employee-department assignment, manager approval paths, and historical status tracking.",
-      screenshotPlaceholders: ["Dashboard screenshot placeholder", "Employee profile placeholder", "Leave request workflow placeholder"],
+      screenshotLabels: ["Dashboard concept", "Employee profile view", "Leave request workflow"],
       challenges: [
         "Defining role permissions clearly enough for both business users and technical implementation.",
         "Keeping the leave approval workflow simple while still supporting real organizational needs.",
@@ -195,55 +238,6 @@ export const projects: Project[] = [
         "Create reporting views for HR activity and leave balances.",
         "Add document upload support for employee records.",
         "Integrate authentication with an enterprise identity provider."
-      ]
-    }
-  },
-  {
-    title: "Process Improvement Documentation",
-    slug: "process-improvement-documentation",
-    category: "Analysis Template",
-    summary:
-      "An editable project placeholder for documenting an as-is process, pain points, to-be process, requirements, and implementation recommendations.",
-    technologies: ["Process Mapping", "Requirements", "Documentation", "Excel", "Power BI"],
-    details: {
-      overview:
-        "This placeholder project is designed for a future business process improvement case study. It can be used to present an as-is workflow, identify pain points, and document a recommended to-be process.",
-      businessProblem:
-        "A business process may include repeated manual steps, unclear ownership, duplicated data entry, or limited reporting visibility. The project should explain the specific issue once real details are available.",
-      businessGoals: [
-        "Document the current process clearly.",
-        "Identify bottlenecks and root causes.",
-        "Recommend a practical future-state workflow.",
-        "Translate improvement opportunities into requirements."
-      ],
-      stakeholders: ["Process Owner", "Operations Team", "Business Users", "IT Team"],
-      solution:
-        "The recommended solution should combine process redesign, clear requirements, and a practical implementation path that fits the organization's tools and constraints.",
-      features: [
-        "As-is process map placeholder.",
-        "Pain point analysis placeholder.",
-        "To-be process map placeholder.",
-        "Requirements list placeholder.",
-        "Implementation recommendations placeholder."
-      ],
-      architecture:
-        "Architecture details can be added if the improvement includes a system, integration, dashboard, automation, or workflow platform.",
-      database:
-        "Database details can be added if the project involves structured data capture, reporting, or integration with an existing system.",
-      screenshotPlaceholders: ["As-is process map placeholder", "To-be process map placeholder"],
-      challenges: [
-        "Capturing enough process detail without making the documentation too complex.",
-        "Separating root causes from symptoms.",
-        "Writing requirements that are clear and testable."
-      ],
-      lessonsLearned: [
-        "Process improvement depends on both workflow design and stakeholder alignment.",
-        "Simple documentation can be more useful than complicated diagrams if it helps decisions."
-      ],
-      futureImprovements: [
-        "Add real process maps.",
-        "Add stakeholder interview notes.",
-        "Add before-and-after workflow comparison."
       ]
     }
   }

@@ -12,7 +12,7 @@ export function ProjectsPreview() {
           <SectionHeading
             eyebrow="Projects"
             title="Case studies with business context and systems thinking."
-            description="The HR Management System project is structured as a full case study, with placeholders ready for screenshots and implementation artifacts."
+            description="The HR Management System project shows how business needs, stakeholders, workflows, and system design decisions can be translated into a practical case study."
           />
           <ButtonLink href="/projects" variant="secondary">
             All Projects

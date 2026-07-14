@@ -11,8 +11,8 @@ export function ExperiencePreview() {
         <div className="mb-10 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
             eyebrow="Experience"
-            title="A timeline built to grow with your career."
-            description="Editable entries for education, academic projects, certifications, internships, and professional roles."
+            title="Experience shaped around analysis, systems thinking, and delivery."
+            description="A focused timeline covering my internship, Computing with Business degree, and HR Management System graduation project."
           />
           <ButtonLink href="/experience" variant="secondary">
             View Timeline

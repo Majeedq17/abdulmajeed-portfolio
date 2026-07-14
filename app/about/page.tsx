@@ -22,7 +22,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Profile"
               title="Professional Summary"
-              description="Editable placeholder copy written to sound realistic and interview-ready."
+              description="A focused overview of my business analysis interests, technical foundation, and working style."
             />
             <div className="mt-8 space-y-5 text-base leading-8 text-gray-600 dark:text-gray-300">
               <p>

@@ -104,7 +104,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
               <div className="card-surface p-6">
                 <h2 className="text-lg font-semibold">Screenshots</h2>
                 <div className="mt-5 space-y-4">
-                  {project.details.screenshotPlaceholders.map((label) => (
+                  {project.details.screenshotLabels.map((label) => (
                     <div
                       className="flex aspect-[16/10] items-center justify-center rounded-2xl border border-dashed border-gray-300 bg-gray-50 text-center text-sm font-medium text-gray-500 dark:border-white/15 dark:bg-white/[0.04] dark:text-gray-400"
                       key={label}
