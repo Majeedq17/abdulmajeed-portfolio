@@ -8,19 +8,11 @@ export function ProjectCard({ project }: { project: Project }) {
     <article className="card-surface flex h-full flex-col overflow-hidden">
       <div className="border-b border-gray-200 bg-gradient-to-br from-accent-50 via-white to-emerald-50 p-6 dark:border-white/10 dark:from-accent-500/10 dark:via-white/[0.03] dark:to-emerald-400/10">
         <div className="flex aspect-[16/9] items-center justify-center rounded-3xl border border-white/80 bg-white/[0.78] shadow-sm dark:border-white/10 dark:bg-white/[0.06]">
-          <div className="w-4/5 space-y-3">
-            <div className="h-3 w-1/2 rounded-full bg-accent-300 dark:bg-accent-300/60" />
-            <div className="grid grid-cols-3 gap-3">
-              <div className="col-span-2 h-24 rounded-2xl bg-gray-100 dark:bg-white/10" />
-              <div className="h-24 rounded-2xl bg-emerald-100 dark:bg-emerald-400/15" />
-            </div>
-            <div className="grid grid-cols-4 gap-2">
-              <div className="h-8 rounded-xl bg-gray-100 dark:bg-white/10" />
-              <div className="h-8 rounded-xl bg-gray-100 dark:bg-white/10" />
-              <div className="h-8 rounded-xl bg-accent-100 dark:bg-accent-400/15" />
-              <div className="h-8 rounded-xl bg-gray-100 dark:bg-white/10" />
-            </div>
-          </div>
+          <img
+            alt="HRMS overview"
+            className="h-full w-full rounded-3xl object-contain"
+            src="/images/hrms-overview.png"
+          />
         </div>
       </div>
       <div className="flex flex-1 flex-col p-6">
